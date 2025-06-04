@@ -1,0 +1,16 @@
+[package]
+name = "text_analyzer_net"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+chrono = "0.4"
